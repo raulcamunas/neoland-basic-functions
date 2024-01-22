@@ -102,3 +102,93 @@ function averageWord(promedio) {
 const result2 = averageWord(mixedElements);
 console.log(result2);
 
+// EJERCICIOS 6
+
+const duplicates = [
+    'sushi',
+    'pizza',
+    'burger',
+    'potatoe',
+    'pasta',
+    'ice-cream',
+    'pizza',
+    'chicken',
+    'onion rings',
+    'pasta',
+    'soda'
+  ];
+
+  function removeDuplicates(param) {
+    const result = [];
+
+    for (const element of param) {
+      if (!result.includes(element)) {
+        result.push(element);
+      }
+    }
+
+    return result;
+  }
+
+  const uniqueArray = removeDuplicates(duplicates);
+  console.log(uniqueArray);
+
+// EJERCICIO 7
+
+const nameFinder = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+  ];
+
+  function finderName(arr, target) {
+    const position = arr.indexOf(target);
+    const found = position !== -1;
+
+    return { found, position };
+  }
+
+  const result4 = finderName(nameFinder, 'Logan');
+  console.log(result4);
+
+
+  // EJERCICIO 8
+
+  const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+  ];
+
+  function repeatCounter(arr) {
+    const wordCount = {};
+
+    for (const word of arr) {
+      if (wordCount[word]) {
+        wordCount[word]++;
+      } else {
+        wordCount[word] = 1;
+      }
+    }
+
+    return wordCount;
+  }
+
+  const result5 = repeatCounter(counterWords);
+  console.log(result5);

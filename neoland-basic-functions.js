@@ -35,3 +35,19 @@ function findLongestWord(words) {
 const palabraMasLarga = findLongestWord(avengers);
 console.log(palabraMasLarga); 
 
+
+// EJERCICIO 3
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(arrayDeNumeros) {
+  let suma = 0;
+
+  for (let i = 0; i < arrayDeNumeros.length; i++) {
+    suma += arrayDeNumeros[i];
+  }
+  return suma;
+}
+
+const resultadoSuma = sumAll(numbers);
+console.log(resultadoSuma); 

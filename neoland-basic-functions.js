@@ -51,3 +51,30 @@ function sumAll(arrayDeNumeros) {
 
 const resultadoSuma = sumAll(numbers);
 console.log(resultadoSuma); 
+
+
+// EJERCICIO 4
+
+const numbers2 = [12, 21, 38, 5, 45, 37, 6];
+
+function average(arrayDeNumeros2){
+    if (arrayDeNumeros2 === 0){
+    return null
+    }
+
+    let suma = 0
+
+    for (let i = 0; i < arrayDeNumeros2.length; i++){
+        suma += arrayDeNumeros2[i]
+    }
+    console.log(suma)
+    let promedio = suma / arrayDeNumeros2.length
+
+    return promedio
+}
+
+const resultadoPromedio = average(numbers2)
+console.log(resultadoPromedio)
+
+
+// EJERCICIO 5

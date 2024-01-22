@@ -78,3 +78,27 @@ console.log(resultadoPromedio)
 
 
 // EJERCICIO 5
+
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+function averageWord(promedio) {
+  let sumaLongitudes = 0;
+  let sumaNumero = 0;
+
+  for (let i = 0; i < promedio.length; i++) {
+    if (typeof promedio[i] === 'number') {
+      sumaLongitudes += promedio[i];
+    } else if (typeof promedio[i] === 'string') {
+      sumaLongitudes += promedio[i].length;
+      sumaNumero++;
+    }
+  }
+  if (sumaNumero === 0) {
+    return 0;
+  }
+  return sumaLongitudes / sumaNumero;
+}
+
+const result2 = averageWord(mixedElements);
+console.log(result2);
+
